@@ -40,12 +40,12 @@ $new-spacers: (
   // $spacer è una variabile bs che di default vale 1rem
 );
 
-$spacers: map-merge($spacers, $new-spacers);
+// $spacers: map-merge($spacers, $new-spacers);
 
-$grid-breakpoints: map-merge($grid-breakpoints, $new-grid-breakpoints);
+// $grid-breakpoints: map-merge($grid-breakpoints, $new-grid-breakpoints);
 
-// a questo punti andiamo a SOVRAPPORRE la nostra $new-theme-colors sull'originale $theme-colors: i colori con nomi uguali (quindi primary, secondary e success) andranno a venire SOVRASCRITTI, ma quelli che non ho toccato (info, warning, danger) manterranno il valore originale
-$theme-colors: map-merge($theme-colors, $new-theme-colors);
+// // a questo punti andiamo a SOVRAPPORRE la nostra $new-theme-colors sull'originale $theme-colors: i colori con nomi uguali (quindi primary, secondary e success) andranno a venire SOVRASCRITTI, ma quelli che non ho toccato (info, warning, danger) manterranno il valore originale
+// $theme-colors: map-merge($theme-colors, $new-theme-colors);
 // quindi ora la mappa di bootstrap $theme-colors è stata modificata con le nostre aggiunte!
 
 // siamo quasi alla fine! come dico a bootstrap di proseguire la sua compilazione utilizzando la nostra $theme-colors modificata per generare tutti i colori, tutti i background, i bottoni, gli alert etc.?
